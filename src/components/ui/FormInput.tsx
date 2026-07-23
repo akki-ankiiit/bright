@@ -12,11 +12,12 @@ const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
  return (
  <div className="flex flex-col gap-1 w-full mb-4">
  {label && (
- <label className="block text-[13px] font-semibold text-brand-text mb-1.5">
+ <label htmlFor={inputId} className="block text-[13px] font-semibold text-brand-text mb-1.5">
  {label}
  </label>
  )}
  <input
+ id={inputId}
  ref={ref}
  className={`w-full px-4 py-3 rounded-md border text-[14px] font-normal transition-all duration-300 outline-none
  ${error 

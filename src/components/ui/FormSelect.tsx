@@ -19,11 +19,12 @@ const FormSelect = forwardRef<HTMLSelectElement, FormSelectProps>(
  return (
  <div className="flex flex-col gap-1 w-full mb-4">
  {label && (
- <label className="block text-[13px] font-semibold text-brand-text mb-1.5">
+ <label htmlFor={selectId} className="block text-[13px] font-semibold text-brand-text mb-1.5">
  {label}
  </label>
  )}
  <select
+ id={selectId}
  ref={ref}
  className={`w-full px-4 py-3 rounded-md border text-[14px] font-normal transition-all duration-300 outline-none appearance-none bg-white
  ${error 
