@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Navbar from './components/layout/Navbar'
-import Footer from './components/layout/Footer'
+import Footer from './components/layout/Footer.tsx'
 import FloatingChat from './components/ui/FloatingChat'
 import Home from './pages/Home'
 import About from './pages/About'
